@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "445382133824",
+    "firebase_url": "https://amvideodownloader.firebaseio.com",
+    "project_id": "amvideodownloader",
+    "storage_bucket": "amvideodownloader.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:445382133824:android:4c189e91295270de",
+        "android_client_info": {
+          "package_name": "Ahwan0m.site.amvideodownloader"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "445382133824-tscr3kmnesta5j31cpcl2f37ppkumeo4.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "Ahwan0m.site.amvideodownloader",
+            "certificate_hash": "cb94c7883ba3cc1f7592ee3935096006f018093f"
+          }
+        },
+        {
+          "client_id": "445382133824-217ignvr442a3h562abcrd2cc2es542h.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC3wBxLiYqiT0PL6EKUkNJnp53Qzoo-Hjo"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "445382133824-217ignvr442a3h562abcrd2cc2es542h.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

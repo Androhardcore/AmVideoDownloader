@@ -1,0 +1,59 @@
+<!--
+ahwan0m.site
+gracies blaugana
+ahwan0m@gmail.com
+-->
+
+<resources>
+    <string name="app_name">AM Video Downloader Beta</string>
+    <string name="enter_web">Tulis atau Paste URL di sini</string>
+    <string name="prev">Back</string>
+    <string name="next">Next</string>
+    <string name="bookmark_this_page">Bookmark This</string>
+    <string name="rename">Rename</string>
+    <string name="download">Download</string>
+    <string name="delete">Delete</string>
+    <string name="queue">Queue</string>
+    <string name="close">Close</string>
+    <string name="reload">Reload</string>
+    <string name="plus">+</string>
+    <string name="xClose">X</string>
+    <string name="home">Home</string>
+    <string name="browser">Browser</string>
+    <string name="downloads">Downloads</string>
+    <string name="bookmarks">Bookmarks</string>
+    <string name="history">Riwayat</string>
+    <string name="speed_0">Speed: 0KB/s</string>
+    <string name="remaining_undefine">Menunggu: —</string>
+    <string name="pause">Jeda</string>
+    <string name="start">Mulai</string>
+    <string name="downloads_inactive_instruction">Press the Go to Page Button. When the page is
+        loaded, play the required video. Wait until app gets the new updated link</string>
+    <string name="clear_all_finished">Hapus semua download</string>
+    <string name="play_video">Mainkan Video</string>
+    <string name="go_to_page">Pergi ke branda</string>
+    <string name="rearrange_instructions">Klik Pindahkan dan seret item untuk hapus ulang
+        ke posisinya</string>
+    <string name="move">Move</string>
+    <string name="go_to_folder">Go to Folder</string>
+    <string name="never_show_download_notice">Jangan tampilkan lagi</string>
+    <string name="add_bookmark_title_label">Title:</string>
+    <string name="add_bookmark_url_label">URL:</string>
+    <string name="add_bookmark_dest_folder_label">Destination Folder:</string>
+    <string name="add_bookmark_new_folder">New Folder</string>
+    <string name="add_bookmark_save">Save</string>
+    <string name="bookmarks_root_folder">bookmarks</string>
+    <string name="bookmarks_new_folder">+ Folder Baru</string>
+    <string name="search">Search</string>
+    <string name="clear_history">Hapus Riwayat</string>
+    <string name="ad_blocker">Ad Blocker</string>
+    <string name="app_title">AM Video Downloader</string>
+    <string name="about">AM Downloader is a browser app for downloading videos
+        \n\nThis Tool from free source LM videodownloader From Loremar Marabillas\n\nCopyright ©2018 Loremar Marabillas\n\nThis program is free software and licensed
+        under the GNU General Public License v2.0
+    \n\nMore Cool Apps Visit my Blog https://ahwan0m.site</string>
+    <string name="try_these_sites">Coba Site Populer Di bawah</string>
+    <string name="descripso_app">Best mobile aplication for download video from Youtube/Instagram/Facebook \nand Other site</string>
+    <string name="ads_unit">ca-app-pub-9613697010222085/2488419047</string>
+    <string name="admob_app_id">ca-app-pub-9613697010222085~4950930851</string>
+</resources>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~     LM videodownloader is a browser app for android, made to easily
+  ~     download videos.
+  ~     Copyright (C) 2018 Loremar Marabillas
+  ~
+  ~     This program is free software; you can redistribute it and/or modify
+  ~     it under the terms of the GNU General Public License as published by
+  ~     the Free Software Foundation; either version 2 of the License, or
+  ~     (at your option) any later version.
+  ~
+  ~     This program is distributed in the hope that it will be useful,
+  ~     but WITHOUT ANY WARRANTY; without even the implied warranty of
+  ~     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  ~     GNU General Public License for more details.
+  ~
+  ~     You should have received a copy of the GNU General Public License along
+  ~     with this program; if not, write to the Free Software Foundation, Inc.,
+  ~     51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
+  -->
+
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="ahwan0m.site.amvideodownloader">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+
+    <application
+        android:name="ahwan0m.site.amvideodownloader.AMdwApp"
+        android:allowBackup="true"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/ic_launcher"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:fullBackupContent="@xml/backup_descriptor"
+        android:icon="@drawable/ic_launcher">
+        <!--meta-data tag yang diperlukan untuk menggunakan Google Play Services.-->
+        <meta-data android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version"/>
+        <!--memasukan elemen Activity dengan atribut configChanges dan theme-->
+        <activity android:name="com.google.android.gms.ads.AdActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+            android:theme="@android:style/Theme.Translucent" />
+        <activity
+            android:name="ahwan0m.site.amvideodownloader.AMdwActivity"
+            android:windowSoftInputMode="stateHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="http" />
+                <data android:scheme="https" />
+
+                <data android:host="m.youtube.com" />
+                <data android:host="m.facebook.com" />
+                <data android:host="www.instagram.com" />
+                <data android:host="instagram.com" />
+                <data android:host="mobile.twitter.com" />
+                <data android:host="www.dailymotion.com" />
+                <data android:host="dailymotion.com" />
+                <data android:host="www.veoh.com" />
+                <data android:host="veoh.com" />
+                <data android:host="vimeo.com" />
+                <data android:host="m.vk.com" />
+                <data android:host="vk.com" />
+                <data android:host="video.fc2.com" />
+                <data android:host="m.vlive.tv" />
+                <data android:host="m.tv.naver.com" />
+                <data android:host="www.metacafe.com" />
+                <data android:host="metacafe.com" />
+                <data android:host="compaign.tudou.com" />
+                <data android:host="video.tudou.com" />
+                <data android:host="www.tudou.com" />
+                <data android:host="m.youku.com" />
+                <data android:host="youku.com" />
+                <data android:host="myspace.com" />
+                <data android:host="vine.co" />
+                <data android:host="www.tumblr.com" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name="ahwan0m.site.amvideodownloader.download_feature.DownloadManager"
+            android:exported="false" />
+
+        <provider
+            android:authorities="ahwan0m.site.amvideodownloader.fileprovider"
+            android:name="android.support.v4.content.FileProvider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/paths" />
+        </provider>
+    </application>
+
+</manifest>
